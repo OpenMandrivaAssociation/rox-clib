@@ -1,16 +1,17 @@
 %define name rox-clib
 %define oname ROX-CLib
-%define version 2.1.7
-%define release %mkrel 3
+%define version 2.1.9
+%define release %mkrel 1
 %define major 6
 %define libname %mklibname rox-c %major
+%define develname %mklibname -d rox-c
 
 Summary: Shared code for ROX applications
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.bz2
-URL: http://www.kerofin.demon.co.uk/rox/libs.html#rox-clib2
+Source0: http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
+URL: http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
 License: GPL
 Group: Graphical desktop/Other
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -36,15 +37,16 @@ This is version 1.1, a development version leading up to 2.0 which will be
 for GTK+ 2.x.
 
 
-%package -n %libname-devel
+%package -n %develname
 Group: Development/C
 Summary: Headers for the rox C library
 Requires: %libname = %version
 Provides: librox-c-devel = %version-%release
 Requires: libgtk+2.0-devel
 Requires: libxml2-devel
+Obsoletes: %mklibname -d rox-c 6
 
-%description -n %libname-devel
+%description -n %develname
 A library for ROX applications written in C.
 
 This is version 1.1, a development version leading up to 2.0 which will be
@@ -78,7 +80,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc %_libdir/%oname/Help
 %dir %_libdir/%oname
+%dir %_libdir/%oname/Messages
+%_libdir/%oname/Messages/en
 %_libdir/%oname/ROX-CLib.xml
+%_libdir/%oname/ROX-CLib-src.xml
 %_libdir/%oname/App*
 %_libdir/%oname/.DirIcon
 %dir %_libdir/%oname/Linux*/
@@ -89,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %_libdir/%oname/Linux*/lib/librox-clib.so.%{major}*
 
-%files -n %libname-devel
+%files -n %develname
 %defattr(-,root,root)
 %_libdir/%oname/Linux*/lib/librox-clib.a
 %_libdir/%oname/Linux*/lib/librox-clib.so
