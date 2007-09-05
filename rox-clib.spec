@@ -22,9 +22,6 @@ Requires: rox
 %description
 A library for ROX applications written in C.
 
-This is version 1.1, a development version leading up to 2.0 which will be
-for GTK+ 2.x.
-
 %package -n %libname
 Group: System/Libraries
 Summary: Shared library of ROX-Clib
@@ -32,10 +29,6 @@ Requires: %name >= %version
 
 %description -n %libname
 A library for ROX applications written in C.
-
-This is version 1.1, a development version leading up to 2.0 which will be
-for GTK+ 2.x.
-
 
 %package -n %develname
 Group: Development/C
@@ -48,10 +41,6 @@ Obsoletes: %mklibname -d rox-c 6
 
 %description -n %develname
 A library for ROX applications written in C.
-
-This is version 1.1, a development version leading up to 2.0 which will be
-for GTK+ 2.x.
-
 
 %prep
 %setup -q -n %oname
