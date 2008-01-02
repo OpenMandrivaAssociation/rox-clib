@@ -14,6 +14,7 @@ Source0: http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
 URL: http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
 License: GPL
 Group: Graphical desktop/Other
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libgtk+2.0-devel
 BuildRequires: libxml2-devel
 Requires: rox
