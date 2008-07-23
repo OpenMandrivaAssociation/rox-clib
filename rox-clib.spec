@@ -1,7 +1,7 @@
 %define name rox-clib
 %define oname ROX-CLib
 %define version 2.1.9
-%define release %mkrel 1
+%define release %mkrel 3
 %define major 6
 %define libname %mklibname rox-c %major
 %define develname %mklibname -d rox-c
