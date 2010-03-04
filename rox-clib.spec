@@ -1,23 +1,23 @@
 %define name rox-clib
 %define oname ROX-CLib
-%define version 2.1.9
-%define release %mkrel 4
+%define version 2.1.10
+%define release %mkrel 1
 %define major 6
 %define libname %mklibname rox-c %major
 %define develname %mklibname -d rox-c
 
-Summary: Shared code for ROX applications
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
-URL: http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
-License: GPL
-Group: Graphical desktop/Other
-BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: libgtk+2.0-devel
-BuildRequires: libxml2-devel
-Requires: rox
+Summary:	Shared code for ROX applications
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+Source0:	http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
+URL:		http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
+License:	GPLv2
+Group:		Graphical desktop/Other
+BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	libgtk+2.0-devel
+BuildRequires:	libxml2-devel
+Requires:	rox
 
 %description
 A library for ROX applications written in C.
@@ -73,8 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc %_libdir/%oname/Help
 %dir %_libdir/%oname
-%dir %_libdir/%oname/Messages
-%_libdir/%oname/Messages/en
 %_libdir/%oname/ROX-CLib.xml
 %_libdir/%oname/ROX-CLib-src.xml
 %_libdir/%oname/App*
