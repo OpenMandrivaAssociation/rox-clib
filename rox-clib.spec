@@ -57,7 +57,7 @@ cd ..
 cp -r %oname %buildroot/%_libdir
 rm -rf %buildroot/%_libdir/%oname/src
 perl -pi -e "s/lib/%_lib/g" %buildroot/%_libdir/%oname/Linux-*/bin/rox_run
-perl -pi -e "s!$RPM_BUILD_DIR/%oname/src/../!%_libdir/%oname/!"  %buildroot/%_libdir/%oname/Linux-*/lib/librox-clib.la 
+perl -pi -e "s!%{_builddir}/%oname/src/../!%_libdir/%oname/!"  %buildroot/%_libdir/%oname/Linux-*/lib/librox-clib.la 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
