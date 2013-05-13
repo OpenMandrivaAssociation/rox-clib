@@ -12,7 +12,7 @@ URL:		http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildRequires:	libgtk+2.0-devel
-BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig(libxml-2.0)
 Requires:	rox
 
 %description
