@@ -43,7 +43,7 @@ A library for ROX applications written in C.
 rm -rf .xvpics
 
 %build
-export CFLAGS="%optflags"
+export CFLAGS="%optflags" LDFLAGS="-ldl"
 ./AppRun --compile
 
 %install
@@ -103,32 +103,32 @@ perl -pi -e "s!$RPM_BUILD_DIR/%oname/src/../!%_libdir/%oname/!"  %buildroot/%_li
   + Olivier Blin <oblin@mandriva.com>
     - restore BuildRoot
 
-  + Götz Waschk <waschk@mandriva.org>
+  + GÃ¶tz Waschk <waschk@mandriva.org>
     - fix description
 
-* Wed Sep 05 2007 Götz Waschk <waschk@mandriva.org> 2.1.9-1mdv2008.0
+* Wed Sep 05 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.1.9-1mdv2008.0
 + Revision: 79945
 - new version
 - new devel name
 - update file list
 
 
-* Sun Jan 14 2007 Götz Waschk <waschk@mandriva.org> 2.1.7-3mdv2007.0
+* Sun Jan 14 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.1.7-3mdv2007.0
 + Revision: 108622
 - Import rox-clib
 
-* Sun Jan 14 2007 G�tz Waschk <waschk@mandriva.org> 2.1.7-3mdv2007.1
+* Sun Jan 14 2007 Götz Waschk <waschk@mandriva.org> 2.1.7-3mdv2007.1
 - fix devel deps
 
-* Fri Jul 21 2006 Götz Waschk <waschk@mandriva.org> 2.1.7-2mdk
+* Fri Jul 21 2006 GÃ¶tz Waschk <waschk@mandriva.org> 2.1.7-2mdk
 - Rebuild
 
-* Mon Jan 02 2006 G�tz Waschk <waschk@mandriva.org> 2.1.7-1mdk
+* Mon Jan 02 2006 Götz Waschk <waschk@mandriva.org> 2.1.7-1mdk
 - new major
 - New release 2.1.7
 - use mkrel
 
-* Tue Oct 18 2005 Götz Waschk <waschk@mandriva.org> 2.1.5-1mdk
+* Tue Oct 18 2005 GÃ¶tz Waschk <waschk@mandriva.org> 2.1.5-1mdk
 - New release 2.1.5
 
 * Wed Nov 24 2004 Goetz Waschk <waschk@linux-mandrake.com> 2.1.4-1mdk
@@ -137,7 +137,7 @@ perl -pi -e "s!$RPM_BUILD_DIR/%oname/src/../!%_libdir/%oname/!"  %buildroot/%_li
 * Mon Sep 27 2004 Goetz Waschk <waschk@linux-mandrake.com> 2.1.3-1mdk
 - New release 2.1.3
 
-* Sat Aug 07 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.1.2-1mdk
+* Sat Aug 07 2004 Götz Waschk <waschk@linux-mandrake.com> 2.1.2-1mdk
 - add missing file
 - New release 2.1.2
 
@@ -147,6 +147,6 @@ perl -pi -e "s!$RPM_BUILD_DIR/%oname/src/../!%_libdir/%oname/!"  %buildroot/%_li
 * Thu May 06 2004 Goetz Waschk <waschk@linux-mandrake.com> 2.1.0-1mdk
 - New release 2.1.0
 
-* Sat Jan 17 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.0.0-1mdk
+* Sat Jan 17 2004 Götz Waschk <waschk@linux-mandrake.com> 2.0.0-1mdk
 - new version
 
