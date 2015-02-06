@@ -6,7 +6,7 @@
 Summary:	Shared code for ROX applications
 Name:		rox-clib
 Version:	2.1.10
-Release:	4
+Release:	5
 Source0:	http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
 URL:		http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
 License:	GPLv2
