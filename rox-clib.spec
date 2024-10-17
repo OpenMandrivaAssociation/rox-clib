@@ -8,7 +8,7 @@ Name:		rox-clib
 Version:	2.1.10
 Release:	5
 Source0:	http://www.kerofin.demon.co.uk/rox/%{oname}-%{version}.tar.gz
-URL:		http://www.kerofin.demon.co.uk/rox/ROX-CLib.html
+URL:		https://www.kerofin.demon.co.uk/rox/ROX-CLib.html
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildRequires:	pkgconfig(gtk+-2.0)
